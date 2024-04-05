@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #54c9e3;
+    
+}
+marquee p{
+    background-color: white;
+    color: #0056b3;
+    text-align: center;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    border-left:6px solid blue ;
+    border-right:6px solid red;
+    border-top:6px solid yellow;
+    border-bottom:6px solid brown;
+}
+#displayword_div{
+  color: black;
+  background-color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-left:2px solid blue ;
+  border-right:3px solid red;
+  border-top:1px solid yellow;
+  border-bottom:5px solid brown;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 80px;
+  
+}
+center a{
+margin: 25px;
+font-size: 25px;
+color: grey;
+}
+
+center{
+    padding: 10px;
+    color: gray;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+#displayWord::first-letter{
+font-weight: 900;
+color: blue;
+text-decoration: underline;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #0056b3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    margin-right: 10px;  
+    outline: none;
+    border: 1px black solid;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+input:focus{
+  
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+::placeholder{
+    color: #000;
+    font-family: cursive;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #54c9e3;
+    box-shadow: 2px 1px 10px 1px gray;
+    color: blue;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 3.6rem;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+#definition {
+    margin-top: 20px;
+    padding: 10px;
+    color: blue;
+    font-weight: 400;
+    background: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+    border-left:6px solid blue ;
+    border-right:6px solid red;
+    border-top:6px solid yellow;
+    border-bottom:6px solid brown;
+}
+hr{
+   background-color:white;
+   height: 4px;
+   border: blue 2px dashed;
+}
+a:hover{
+   color: blue;
+   background-color: white;
+   padding: 8px;
+   border-radius: 150px;
+   border: 2.5px blue solid;
+}
+#colorChange{
+    height: 5px;
+    width: 100px;
+    font-size: x-small;
+    border: none;
+    outline: none;
+    background: grey;
+    float: right;
+    color: white;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
