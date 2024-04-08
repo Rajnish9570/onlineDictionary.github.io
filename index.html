@@ -11,36 +11,32 @@
     background: #54c9e3;
     
 }
-p:first-child{
-    color: blue;
-    font-weight: bold;
-}
-
-        #box1{
+ #box1{
             text-align: center;
             padding: 10px;
             margin: 10px;
-            border-left:3px solid blue ;
-            border-right:6px solid red;
-            border-top:2px solid black;
-            border-bottom:4px solid yellowgreen;
-            border-radius: 30px;
+            border-left:15px solid blue ;
+            border-right:15px solid red;
+            border-top:15px solid green;
+            border-bottom:15px solid yellow;
+          border-radius: 5px;
           height: 40%;
-          background-color: #54c9e3;
+          background: linear-gradient(blue,white);
         }
 
         #box1 p{
             font-size: 3rem;
+            color: white;
         }
         #rule{
-            width: 70%;
+            width: 80%;
             margin-top: 2rem;
             padding: 20px;
             background-color: white;
             border-left: 7px solid blue;
-            border-right: 7px solid blue;
-            border-bottom: 4px solid black;
-            border-top:4px solid black ;
+            border-right: 7px solid yellow;
+            border-bottom: 4px solid red;
+            border-top:4px solid brown;
             border-radius: 30px;
         }
         li{
@@ -60,6 +56,11 @@ p:first-child{
             background: white;
             color: blue;
             letter-spacing: 1rem;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #07f6f8;
+            color: #201;
         }
     #colorChange{
     height: 5px;
@@ -100,21 +101,44 @@ i{
     font-weight: bold;
     
 }
+p{
+    font-family: cursive;
+}
+span{
+    font-size: 1.3rem;
+}
+marquee {
+    background-color: white;
+    
+    text-align: center;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-left:6px solid blue ;
+    border-right:6px solid red;
+    border-top:6px solid yellow;
+    border-bottom:6px solid brown;
+}
     </style>
 </head>
-<body id="bodyColor">
-    Change theme: <input type="text" name="" id="colorChange" onkeyup="colorChage()" placeholder="Type color...">
-    <center>
-    <div id="box1">
-    <p id="p">A to Z</p>
-    <p id="pp"> DICTIONARY</p>  
-    </div>
-    <h2>Hey! welcome to "A to Z Dictionary" </h2>
-    <h2>English to Hindi </h2>
-
+<body id="bodyColor" >
    
+    Change theme:  <input type="text" name="" id="colorChange" onkeyup="colorChage()" placeholder="Type color...">
+    <center>
+      <marquee behaveior="smooth" direction="left">  <h2 style="color: blue;">Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to</h2> </marquee>
+    <div id="box1">
+    <p>A to Z</p>
+    
+    <p>
+        <span>English to Hindi</span>
+        <br>
+        DICTIONARY</p>  
+    </div>
+
     <div id="rule">
-       <marquee  direction="left"> <h1>Read this Documentation</h1></marquee>
+        <h1>Read this Documentation</h1>
         <li>1. Touch on start button.</li>
         <a href="start.html"><button>START</button></a>
         <hr>
@@ -140,6 +164,7 @@ i{
          function colorChage(){
     var color = document.getElementById('colorChange').value;
     document.getElementById("bodyColor").style.background=color;
+
     }
  
     </script>
