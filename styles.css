@@ -3,7 +3,22 @@ body {
     background: #54c9e3;
     
 }
-marquee{
+#back 
+{
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(45, 99%, 38%);
+   
+}
+ #back:hover{
+    background: none;
+    color: blue;
+}
+marquee {
     background-color: white;
     color: #0056b3;
     text-align: center;
@@ -74,7 +89,6 @@ input[type="text"] {
     border-radius: 20px;
 }
 input:focus{
-  
     border-radius: 20px;
     background-color: antiquewhite;
 }
@@ -83,7 +97,6 @@ input:focus{
     color: #000;
     font-family: cursive;
 }
-
 
 button {
     padding: 10px 20px;
@@ -120,7 +133,7 @@ hr{
    height: 4px;
    border: blue 2px dashed;
 }
-a:hover{
+center a:hover{
    color: blue;
    background-color: white;
    padding: 8px;
