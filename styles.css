@@ -6,8 +6,8 @@ body {
 #back 
 {
     position: fixed;
-    top: 50%;
-    bottom: 50%;
+    bottom: 10%;
+    top: 90%;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
