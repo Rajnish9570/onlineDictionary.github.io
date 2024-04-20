@@ -8,7 +8,7 @@
     <style>
         body {
     font-family: Arial, sans-serif;
-    background: #54c9e3;
+    background: #def999;
     
 }
  #box1{
@@ -21,7 +21,7 @@
             border-bottom:4px solid yellow;
           border-radius: 5px;
           height: 40%;
-          background: linear-gradient(blue,white);
+        
         }
 
         #box1 p{
@@ -124,20 +124,28 @@ marquee {
     border-top:6px solid yellow;
     border-bottom:6px solid brown;
 }
+.color1, .color2{
+    border: none;
+    outline: none;
+    float: right;
+    margin: 10px ;
+   height: 30px;
+   background: #def999;
+}
     </style>
 </head>
-<body id="bodyColor" >
+<body id="gradient" >
    
-    Change theme:  <input type="text" name="" id="colorChange" onkeyup="colorChage()" placeholder="Type color...">
     <center>
       <marquee behaveior="smooth" direction="left">  <h2 style="color: blue;">Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to Hey! welcome to 💐💐💐💐 Hey! welcome to 💐💐💐💐 Hey! welcome to</h2> </marquee>
+    
     <div id="box1">
-    <p style="color: whitesmoke;">𝓐 𝓽𝓸 𝔃</p>
+    <p style="color: blueviolet;">A t𝓸 𝔃</p>
     
     <p>
         <span>ᴱⁿᵍˡⁱˢʰ ᵗᵒ ᴴⁱⁿᵈⁱ</span>
         <br>
-        𝕯𝖎𝖈𝖙𝖎𝖔𝖓𝖆𝖗𝖞</p>  
+        𝕯𝖎c𝖙𝖎o𝖓A𝖗y</p>  
     </div>
 
     <div id="rule">
@@ -158,18 +166,25 @@ marquee {
      <hr>
      <li class="i">Aardvark - <i class="fa-solid fa-square-check"></i></li>
     <hr>
-    <li>4. At the top one input box are shown on the right side of page to change theme, </li>
+    <li>4. Two input box  are shown in the bottom  of right side of page to change gradient theme.</li>
     <hr>
-    <li> you can enter the color name or hex code to change background theme.</li>
+    <li> you can choose color value from both color box to change gradient background theme.</li>
     </div>
     </center>
-    <script>
-         function colorChage(){
-    var color = document.getElementById('colorChange').value;
-    document.getElementById("bodyColor").style.background=color;
 
-    }
- 
+    <input type="color" class="color1" value="#def999" >
+    <input type="color" class="color2" value="#def999" >
+
+    <script>
+                var color1= document.querySelector(".color1");
+        var color2= document.querySelector(".color2");
+        var body= document.getElementById("gradient");
+
+        function Gradient(){
+    body.style.background= "linear-gradient(to right, "+ color1.value + "," + color2.value + ")";
+        }
+        color1.addEventListener("input", Gradient);      
+        color2.addEventListener("input", Gradient);   
     </script>
 </body>
 </html>
