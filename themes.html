@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body{
+        
+            background-color: #def999;
+        }
+        *{
+            font-family: cursive;
+        }
+
+        #back 
+{
+    position: fixed;
+    top: 90%;
+    bottom: 10%;
+    left: 0.3%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: grey; 
+}
+ #back:hover{
+  
+    color: blue;
+    background-color: white;
+}
+        #textarea{
+            resize: none;
+            height: 90px;
+        }
+        .inp{
+         display: flex;
+         margin: 10px;
+         padding: 10px;
+         height: 30px;
+         width: 70%;
+         outline: none;
+         border: none;
+         background-color: #ff9;
+         border: 1px solid grey;
+         color: gray;
+         border-radius: 5px;
+         text-transform: capitalize;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+        button{
+            width: 50%;
+            height: 45px;
+            background: none;
+            outline: none;
+            border: 1.5px solid green;
+        }
+button:hover{
+    width: 60%;
+    color: chocolate;
+    background: white;
+    border: none;
+    border-radius: 5px;
+}
+p span{
+    font-size: 0.7rem;
+}
+#a i{
+color: black;
+text-indent: 25px;
+}
+#center p{
+    font-size: 0.98rem;
+}
+.color1, .color2{
+    border: none;
+    outline: none;
+    float: right;
+    margin: 10px ;
+   height: 30px;
+   background: #def999;
+}
+
+    </style>
+</head>
+<body id="gradient">
+<div id="box1">
+    <center>
+        <p>Meet Developer in one touch. <br><span>(Rajnish Kumar / Frontend designer & Developer)</span></p>
+<a id="a" href="tel:9570986396"><i class="fa-solid fa-phone"></i></a>
+<a id="a" href="https://wa.me/919065407531"><i class="fa-brands fa-whatsapp"></i></a>
+<a id="a" href="mailto:rockstarrajnish4658@gmail.com"> <i class="fa-solid fa-envelope"></i></a>
+<a id="a" href="https://github.com/Rajnish9570" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <form action="">
+<input type="text" class="inp" placeholder="First Name" name="FirstName" id="fn" onkeyup="submitted1()">
+<input type="text" class="inp" placeholder="Second Name" name="SecondName" id="sn" onkeyup="submitted2()">
+<input type="text" class="inp" placeholder="e-mail ID" name="Email_ID" id="email" onkeyup="submitted3()">
+<input type="text" class="inp" placeholder="Mobile Number" name="PhoneNumber" id="mn" onkeyup="submitted4()">
+<input type="number" class="inp" name="rate" id="rate" placeholder="Rate This App" min="1" max="5" onkeyup="submitted5()">
+<textarea name="Feedback" class="inp" id="textarea"  placeholder="Write Feedback About this App" onkeyup="submitted6()"></textarea>
+<button type="submit">Submit</button>
+</form>
+</center>
+</div>
+
+<div id="center" >
+<p id="naam1"></p>
+<p id="naam2"></p>
+<p id="emails"></p>
+<p id="phoneno"></p>
+<p id="starrate"></p>
+<p id="sandesh"></p>
+</div>
+
+<input type="color" class="color1" value="#def999" >
+
+<input type="color" class="color2" value="#def999" >
+<a id="back" href="start.html"> <i class="fa-solid fa-backward" ></i></a>
+<script>
+    function submitted1(){
+var name1 =document.getElementById('fn').value;
+document.getElementById("naam1").innerText="First Name : " + name1;
+    }
+    function submitted2(){
+var name2 =document.getElementById('sn').value;
+document.getElementById("naam2").innerHTML="Second Name : " + name2;
+    }
+
+    function submitted3(){
+var name3 =document.getElementById('email').value;
+document.getElementById("emails").innerHTML="E Mail ID : " + name3;
+    }
+
+    function submitted4(){ 
+var name4 =document.getElementById('mn').value;
+document.getElementById("phoneno").innerHTML="Phone Number : " + name4;
+    }
+
+function submitted5(){ 
+var name5 =document.getElementById('rate').value;
+document.getElementById("starrate").innerHTML="Rating : " + name5;
+    }
+
+    function submitted6(){ 
+var name6 =document.getElementById('textarea').value;
+document.getElementById("sandesh").innerHTML="Message : " + name6;
+    }
+
+        var color1= document.querySelector(".color1");
+        var color2= document.querySelector(".color2");
+        var body= document.getElementById("gradient");
+
+        function Gradient(){
+    body.style.background= "linear-gradient(to right, "+ color1.value + "," + color2.value + ")";
+        }
+        color1.addEventListener("input", Gradient);      
+        color2.addEventListener("input", Gradient);      
+</script>
+</body>
+</html>
+
