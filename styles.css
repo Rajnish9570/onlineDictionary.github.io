@@ -1,22 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    background: #54c9e3;
+    background: #def999;
     
 }
 #back 
 {
     position: fixed;
-    bottom: 10%;
     top: 90%;
+    bottom: 10%;
+    left: 0.3%;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    color: hsl(45, 99%, 38%);
+    color: grey;
+  
+    
    
 }
  #back:hover{
-    background: none;
+  
     color: blue;
+    background-color: white;
 }
 marquee {
     background-color: white;
@@ -133,12 +137,17 @@ hr{
    height: 4px;
    border: blue 2px dashed;
 }
-center a:hover{
+center a{
    color: blue;
    background-color: white;
    padding: 8px;
    border-radius: 150px;
    border: 2.5px blue solid;
+   font-size: 1rem;
+   border-left:6px solid blue ;
+   border-right:6px solid red;
+   border-top:6px solid yellow;
+   border-bottom:6px solid brown;
 }
 #colorChange{
     height: 5px;
@@ -151,4 +160,13 @@ center a:hover{
     color: white;
     letter-spacing: 1px;
     font-family: cursive;
+}
+.color1, .color2{
+    border: none;
+    outline: none;
+    float: right;
+    margin: 10px ;
+   height: 30px;
+   background: #def999;
+   
 }
